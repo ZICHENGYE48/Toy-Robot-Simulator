@@ -47,7 +47,7 @@ const GameSettings = ({
           </select>
         </div>
   
-        {gameStart || <Button onClick={()=> startButtonClick(true)}>Start</Button>}
+        {gameStart || <Button onClick={()=> startButtonClick(true)}>Start!</Button>}
 
         {gameStart && 
           <>
