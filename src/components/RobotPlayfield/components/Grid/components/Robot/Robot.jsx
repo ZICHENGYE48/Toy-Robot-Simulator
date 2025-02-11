@@ -1,27 +1,35 @@
-import robotImage from '../../../../../../assets/robot.png';
+import PropTypes from "prop-types";
+import robotImage from "../../../../../../assets/robot.png";
 
-const Robot = ({
-  direction
-}) => {
-  let style = ''
+const Robot = ({ direction }) => {
+  let style = "";
   switch (direction) {
-    case 'North':
+    case "North":
       break;
-    case 'South':
-      style = "rotate-180"
+    case "South":
+      style = "rotate-180";
       break;
-    case 'East':
-      style = "rotate-90"
+    case "East":
+      style = "rotate-90";
       break;
-    case 'West':
-      style = "rotate-270"
+    case "West":
+      style = "rotate-270";
       break;
     default:
       break;
   }
-  return (
-    <img src={robotImage} alt="Toy Robot" className={`w-full h-full object-cover ${style}`}/>
-  )
-}
 
-export default Robot
+  return (
+    <img
+      src={robotImage}
+      alt="Toy Robot"
+      className={`w-full h-full object-cover ${style}`}
+    />
+  );
+};
+
+Robot.propTypes = {
+  direction: PropTypes.string.isRequired,
+};
+
+export default Robot;

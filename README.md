@@ -23,20 +23,24 @@ This project is a **Toy Robot Simulator** built with **React**. The simulator al
 Follow these steps to set up and run the Toy Robot Simulator project using `pnpm`:
 
 ### 1. **Install pnpm**
+
 If you don't have `pnpm` installed on your system, you can install it using the following command:
 
 npm install -g pnpm
 
 ### 2. **Clone the Repository**
+
 Clone the repository to your local machine by running:
 git clone https://github.com/ZICHENGYE48/Toy-Robot-Simulator.git
 Navigate into the project directory:
 cd Toy-Robot-Simulator
 
 ### 3. **Install Dependencies**
+
 Install all necessary dependencies by running:
 pnpm install
 
 ### 4. **Run the Development Server**
+
 To run the project in development mode, use:
 pnpm run dev
