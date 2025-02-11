@@ -16,18 +16,20 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18'  # TODO: Confirm node version after create next app
+          node-version: '18'
+
+      - name: Install pnpm
+        run: |
+          npm install -g pnpm
 
       - name: Install dependencies
         run: |
-          pnpm ci
+          pnpm install
 
       - name: Run ESLint
-        # TODO: Confirm path after create next app
         run: |
           npx eslint . --max-warnings=0
 
       - name: Run Prettier check
-        # TODO: Confirm path after create next app
         run: |
           npx prettier . --check
